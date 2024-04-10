@@ -20,6 +20,10 @@ header{
    color: palevioletred;
    position: relative;
 }
+.logo a{
+   color: palevioletred;
+   text-decoration: none;
+}
 .shop_cart_button{
    float: right;
    cursor: pointer;
@@ -63,6 +67,24 @@ header .item h2{
 }
 header .item b{
    color:rgb(47, 74, 65) ;
+}
+header .item .delete_icon{
+   color: pink;
+   float: right;
+   margin-right: 20px;
+   cursor: pointer;
+   transition: all .5s ease;
+}
+header .item .delete_icon:hover{
+   color:crimson;
+   transform: scale(1.1);
+}
+header .summa{
+   float: left;
+   width: 100%;
+   font-weight: 600;
+   margin:0 0 20px 10px;
+   color:rgb(47, 74, 65);
 }
 header ul.nav{
    display: flex;
@@ -113,6 +135,22 @@ header .presentation::before{
    width: 400px;
    text-align: right;
    font-weight: 400;
+}
+.categories div{
+   display: inline-block;
+   background: pink;
+   font-weight: 500;
+   border-radius: 50px;
+   padding: 10px 20px;
+   margin:0 15px 50px 0;
+   color: rgb(47, 74, 65);
+   transition: all .5s ease;
+}
+.categories div:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   transform: scale(1.1);
+   border:  1px solid coral;
 }
 main{
    display: flex;
