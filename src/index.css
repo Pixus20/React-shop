@@ -157,6 +157,59 @@ main{
    width: 100%;
    flex-wrap: wrap;
    justify-content: space-between;
+   position: relative;
+}
+.full_item{
+   position: absolute;
+   width: 800px;
+   height: 800px;
+   z-index: 100;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%);
+   background-color: pink;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 5%;
+}
+.full_item img{
+margin-bottom: 20px;
+height: 500px;
+width: 500px;
+border-radius: 50%;
+cursor: pointer;
+}
+.full_item h2{
+   color: coral;
+   margin: 20px 0;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+.full_item p{
+   color: coral;
+}
+.full_item b{
+   color:rgb(47, 74, 65) ;
+   margin:20px 0;
+   font-size: 18px;
+   font-weight: 600;
+}
+.full_item .add_to_cart{
+   background: coral;
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   line-height: 35px;
+   font-weight: 600;
+   color: pink;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: transform  .5s ease;
+}
+.full_item .add_to_cart:hover{
+   transform: scale(1.1) translateY(-5px);
 }
 main .item{
    width: 30%;
@@ -171,6 +224,7 @@ main .item img{
    height: 300px;
    border-radius: 20px;
    transition: transform  .5s ease;
+   cursor: pointer;
 }
 main .item img:hover{
    transform: scale(1.05);
@@ -182,7 +236,7 @@ main p, main h2, main b{
 main b{
    color: rgb(47, 74, 65);
 }
-.add_to_cart{
+main  .add_to_cart{
    position: absolute;
    right: 20px;
    bottom: 20px;
@@ -197,9 +251,8 @@ main b{
    cursor: pointer;
    transition: transform  .5s ease;
 }
-.add_to_cart:hover{
+main .add_to_cart:hover{
    transform: scale(1.1) translateY(-5px);
-
 }
 footer{
    text-align: center;
